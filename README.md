@@ -45,12 +45,12 @@ For **each** page:
 1. Create a funnel or website page with the matching slug (`salon-at-home`, `paonta-home-services`, `join-as-a-partner`).
 2. Add **one full-width section** with a single **Custom HTML / Custom Code** element (section padding 0 if GHL offers it).
 3. Open the matching `ghl-paste.html`, select all, copy, and paste into that element.
-4. Open the page's **Tracking Code → Head** (or site-level head tracking) and paste the contents of `head-snippet.html`.
+4. Open the page's **Tracking Code → Head** (or site-level head tracking) and paste the contents of `head-snippet.html` (optional but recommended for Meta Pixel + earlier font load). Brand fonts and Material Symbols also self-load from the paste JS, so icons still work if the head snippet is missing.
 5. In both the head snippet and the page `CONFIG` object, replace `REPLACE_WITH_META_PIXEL_ID` with your real Pixel ID (or leave the placeholder — the Pixel simply won't load).
 6. For the partner page, set `FORM_WEBHOOK_URL` to your GHL **Inbound Webhook** URL from the workflow that should capture partner leads.
 7. **Push this repo to GitHub** and keep it **public** so jsDelivr can serve `assets/` (see below). No GHL Media Library needed.
 
-> CSS is scoped under `#fk-lp`. A small script expands GHL's parent column/row so the page is full-bleed (same approach as Manas Yoga Routine). Fonts and Pixel stay in the head snippet.
+> CSS is scoped under `#fk-lp`. A small script expands GHL's parent column/row so the page is full-bleed (same approach as Manas Yoga Routine). Fonts self-load from the paste; Pixel stays in the head snippet (or page `CONFIG`).
 
 ---
 
@@ -146,7 +146,7 @@ https://cdn.jsdelivr.net/gh/Ranjan-Kashyap/fixkardo-landing-pages@main/assets/<f
 |---|---|
 | `fixkardo-logo.png` | Top bar + footer |
 | `salon-hero.webp` | Salon hero (4:5) |
-| `salon-door.webp`, `salon-facial.webp`, `salon-hairspa.webp`, `salon-manicure.webp`, `salon-blowdry.webp` | Salon services / strip |
+| `salon-door.webp`, `salon-facial.webp`, `salon-hairspa.webp`, `salon-manicure.webp`, `salon-blowdry.webp`, `salon-waxing.webp`, `salon-threading.webp`, `salon-mehendi.webp` | Salon services / strip |
 | `paonta-hero.webp` | Paonta hero (4:5) |
 | `svc-electrician.webp`, `svc-plumber.webp`, `svc-ro.webp`, `svc-tank.webp`, `svc-mens-salon.webp` | Paonta service cards |
 | `partner-hero.webp` | Partner hero (4:5) |

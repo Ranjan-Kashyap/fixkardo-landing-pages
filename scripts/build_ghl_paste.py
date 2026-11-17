@@ -29,7 +29,8 @@ def build(page: Path) -> Path:
     out = page.with_name("ghl-paste.html")
     header = (
         "<!-- FixKardo GHL paste: copy ALL of this file into one Custom HTML / Custom Code element. -->\n"
-        "<!-- Also paste head-snippet.html into Tracking Code → Head. -->\n"
+        "<!-- Fonts (Work Sans / Mukta / Material Symbols) self-load from the paste JS. -->\n"
+        "<!-- Optional: also paste head-snippet.html into Tracking Code → Head (Pixel + early fonts). -->\n"
         "<!-- Images load from jsDelivr — repo must be public with assets/ on main. -->\n"
     )
     out.write_text(header + body + "\n", encoding="utf-8")

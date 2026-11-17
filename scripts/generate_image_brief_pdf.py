@@ -451,12 +451,40 @@ story.append(
     )
 )
 
-story.append(Paragraph("Salon services that use icons only (no photo needed)", styles["H2"]))
 story.append(
-    Paragraph(
-        "Waxing, Threading, and Mehendi currently use Material icon placeholders — "
-        "<b>no image required</b> unless you want to expand the set later.",
-        styles["Body"],
+    asset_block(
+        "A7",
+        "salon-waxing.webp",
+        "Service card “Waxing”",
+        "4:3 landscape",
+        "600 × 450 px",
+        "1200 × 900 px → export 600×450",
+        "Waxing at home",
+        "Indian beautician in dark green FixKardo polo applying wax to a client's leg at home; wax warmer and sticks on a side tray, bright living room, photoreal, no text, 4:3.",
+    )
+)
+story.append(
+    asset_block(
+        "A8",
+        "salon-threading.webp",
+        "Service card “Threading”",
+        "4:3 landscape",
+        "600 × 450 px",
+        "1200 × 900 px → export 600×450",
+        "Eyebrow threading at home",
+        "Indian beautician in dark green FixKardo polo doing eyebrow threading on a relaxed client at home; cotton thread visible, bright living room, photoreal, no text, 4:3.",
+    )
+)
+story.append(
+    asset_block(
+        "A9",
+        "salon-mehendi.webp",
+        "Service card “Mehendi”",
+        "4:3 landscape",
+        "600 × 450 px",
+        "1200 × 900 px → export 600×450",
+        "Mehendi / henna at home",
+        "Indian mehendi artist in dark green FixKardo polo applying henna design on a client's hand at home; henna cones on a tray, bright living room, photoreal, no text, 4:3.",
     )
 )
 
@@ -632,6 +660,9 @@ checklist = [
     ("A4", "salon-hairspa.webp", "Salon", "600×450", "4:3"),
     ("A5", "salon-manicure.webp", "Salon", "600×450", "4:3"),
     ("A6", "salon-blowdry.webp", "Salon", "600×450", "4:3"),
+    ("A7", "salon-waxing.webp", "Salon", "600×450", "4:3"),
+    ("A8", "salon-threading.webp", "Salon", "600×450", "4:3"),
+    ("A9", "salon-mehendi.webp", "Salon", "600×450", "4:3"),
     ("B1", "paonta-hero.webp", "Paonta", "800×1000", "4:5"),
     ("B2", "svc-electrician.webp", "Paonta", "600×450", "4:3"),
     ("B3", "svc-plumber.webp", "Paonta", "600×450", "4:3"),
